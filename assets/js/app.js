@@ -20,6 +20,8 @@ const main = $('main');
 const preloader = $('.preloader-wrapper');
 const menuNavLink = $('.nav-item a');
 
+const moveToTopBtn = $('.move-top-wrapper');
+
 $(window).on('load', () => {
   preloader.hide();
 });
@@ -30,6 +32,20 @@ $(() => {
     $('.nav-drawer').toggleClass('slide');
     $('.menu-toggler-icon').toggleClass('click');
     overlay.toggleClass('show');
+  });
+
+  // Hide/Show Move To Top Button
+  $(window).on('scroll', () => {
+    if (window.pageYOffset > header.innerHeight()) {
+      moveToTopBtn.show();
+    } else {
+      moveToTopBtn.hide();
+    }
+  });
+
+  // Scroll To Top
+  moveToTopBtn.on('click', () => {
+    $(window).scrollTop(0);
   });
 
   // Set Active Link

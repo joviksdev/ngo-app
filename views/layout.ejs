@@ -13,13 +13,15 @@
     <title>NGO app || <%= title %></title>
   </head>
   <body class="d-flex flex-column">
+    <header> <%- include('./layouts/header') %> </header>
     <div class="overlay"></div>
     <div class="preloader-wrapper"
       ><img src="../assets/img/preloader.svg" alt="preloader"
     /></div>
-    <header> <%- include('./layouts/header') %> </header>
-    <main class="flex-grow-1"> <%- body %> </main>
-    <%- include('./layouts/footer') %>
+    <%- include('./partials/moveToTop') %>
+    <main class="flex-grow-1">
+      <%- body %> <%- include('./layouts/footer') %>
+    </main>
 
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
