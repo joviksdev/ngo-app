@@ -95,6 +95,7 @@ body {
   bottom: 40px;
   right: 20px;
   height: 40px;
+  z-index: 14000;
   width: 40px;
   text-align: center;
   box-shadow: var(--drop-shadow);
@@ -513,6 +514,9 @@ header .navbar-nav a.active {
 .about-us-carousel .carousel-img {
   max-width: 140px;
   margin: auto;
+  display: block;
+  padding: 3px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
 .about-us-carousel .carousel-icon {
