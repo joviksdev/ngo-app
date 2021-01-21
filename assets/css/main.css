@@ -73,6 +73,23 @@ body {
   height: 100vh;
 }
 
+/* Preloader */
+.preloader-wrapper {
+  position: fixed;
+  background-color: white;
+  height: 100vh;
+  z-index: 11000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader-wrapper img {
+  width: 120px;
+  display: block;
+}
+
 /* Header Start */
 header {
   padding: 5px 0;

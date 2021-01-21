@@ -17,7 +17,12 @@ const routes = [
 const overlay = $('.overlay');
 const header = $('header');
 const main = $('main');
+const preloader = $('.preloader-wrapper');
 const menuNavLink = $('.nav-item a');
+
+$(window).on('load', () => {
+  preloader.hide();
+});
 
 $(() => {
   // Toggle Menu
