@@ -27,9 +27,9 @@ a:hover {
 
 input[type='email']:focus,
 input[type='text']:focus {
-  outline: none !important;
-  box-shadow: none !important;
-  border: none !important;
+  outline: none;
+  box-shadow: none;
+  border: none;
 }
 
 .social-icon {
@@ -452,12 +452,17 @@ header .navbar-nav a.active {
   text-decoration: none;
 }
 
+.contact-section i {
+  font-size: 32px;
+  margin-right: 25px;
+}
+
 .contact-form input[type='text']:focus,
 .contact-form input[type='email']:focus,
 .contact-form textarea:focus {
   box-shadow: none !important;
-  border: 1px solid var(--prim-color);
-  outline: none;
+  border: 1px solid var(--prim-color) !important;
+  outline: none !important;
 }
 
 .contact-form textarea {
